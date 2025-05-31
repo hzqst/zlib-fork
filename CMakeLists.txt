@@ -7,6 +7,14 @@ project(
     HOMEPAGE_URL "https://zlib.net/"
     DESCRIPTION "a general-purpose lossless data-compression library")
 
+
+option(USE_VCLTL "USE VCLTL" OFF)
+
+if(USE_VCLTL)
+include("VC-LTL helper for cmake.cmake")
+endif()
+
+
 # ============================================================================
 # CPack
 # ============================================================================
