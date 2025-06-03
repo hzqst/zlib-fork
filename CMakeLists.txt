@@ -132,7 +132,7 @@ configure_file(${zlib_BINARY_DIR}/zconf.h.cmakein ${zlib_BINARY_DIR}/zconf.h)
 # zlib
 # ============================================================================
 
-set(ZLIB_PUBLIC_HDRS ${zlib_BINARY_DIR}/zconf.h zlib.h)
+set(ZLIB_PUBLIC_HDRS ${zlib_BINARY_DIR}/zconf.h zlib.h zutil.h)
 
 set(ZLIB_PRIVATE_HDRS
     crc32.h
@@ -142,8 +142,7 @@ set(ZLIB_PRIVATE_HDRS
     inffixed.h
     inflate.h
     inftrees.h
-    trees.h
-    zutil.h)
+    trees.h)
 
 set(ZLIB_SRCS
     adler32.c
